@@ -50,7 +50,7 @@ const bouncingCircle = {
     radius: 32,
     hspeed: 2,
     vspeed: 2,
-    color: 'pink'
+    color: 'red'
 }
 
 // Define our paddle object that can be controlled via keyboard
@@ -60,7 +60,7 @@ const paddle = {
     width: 128,
     height: 32,
     hspeed: 10,
-    color: 'red'
+    color: 'orange'
 }
 
 // Function that defines the behavior of our bouncing circle object
