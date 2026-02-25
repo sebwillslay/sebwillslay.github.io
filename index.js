@@ -13,11 +13,19 @@ function handleKeyPress(e) {
 
     if (e.key == 'a' || e.key == 'ArrowLeft') {
         // move left
-        paddle.x -= paddle.hspeed;
+        obj.x -= paddle.hspeed;
     }
     else if (e.key == 'd' || e.key == 'ArrowRight') {
         // move right
-        paddle.x += paddle.hspeed;
+        obj.x += paddle.hspeed;
+    }
+    else if (e.key == 'w' || e.key == 'ArrowUp') {
+        // move right
+        obj.x += paddle.vspeed;
+    }
+    else if (e.key == 's' || e.key == 'ArrowDown') {
+        // move right
+        obj.x -= paddle.vspeed;
     }
 }
 
@@ -51,16 +59,6 @@ const bouncingCircle = {
     hspeed: 2,
     vspeed: 2,
     color: 'red'
-}
-
-// Define our paddle object that can be controlled via keyboard
-const paddle = {
-    x: canvas.width/2,
-    y: 550,
-    width: 128,
-    height: 32,
-    hspeed: 10,
-    color: 'orange'
 }
 
 // Function that defines the behavior of our bouncing circle object
